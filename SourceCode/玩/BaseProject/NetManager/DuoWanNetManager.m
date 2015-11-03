@@ -7,23 +7,19 @@
 //
 
 #import "DuoWanNetManager.h"
-//很多具有共同点的东西，可以统一宏定义，比如
-//凡是自己写的宏定义 都需要用k开头，这是编码习惯
-
+//很多具有共同点的东西，可以统一宏定义, 凡是自己写的宏定义 都需要用k开头，这是编码习惯
 
 //如果宏命令超长需要换行，只需要在换行位置添加 \ 即可， 最后一行不用加
 #define kOSType       @"OSType": [@"iOS" stringByAppendingString\
 :[UIDevice currentDevice].systemVersion] //获取当前系统版本号
 
 //把path写到文件头部，使用宏定义形势。 方便后期维护
-#define kHeroPath  @"http://lolbox.duowan.com/phone/apiHeroes.php"    //免费+全部英雄
-#define kHeroSkinPath @"http://box.dwstatic.com/apiHeroSkin.php" //英雄皮肤
-//............
+//把所有路径宏定义封装到DuoWanRequestPath.h文件中,太多东西放在文件头部,好乱的说😊
+#import "DuoWanRequestPath.h"
 
 @implementation DuoWanNetManager
 
 + (id)getHeroWithType:(HeroType)type completionHandle:(void (^)(id, NSError *))completionHandle{
-//参数错误传递提示
     
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{kOSType, @"v": @140}];
     switch (type) {
@@ -36,6 +32,7 @@
             break;
         }
         default: {
+            NSAssert1(NO, @"%s:type类型不正确", __func__);
             break;
         }
     }
