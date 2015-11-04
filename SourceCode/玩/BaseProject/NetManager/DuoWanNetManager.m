@@ -84,6 +84,42 @@
     }];
 }
 
++ (id)getHeroDetailWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroDetailPath parameters:@{kV, kOSType, @"heroName": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroDetailModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getHeroGiftAndRun:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kGiftAndRunPath parameters:@{kV, kOSType, @"hero": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroGiftModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
++ (id)getHeroInfoWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroInfoPath parameters:@{kV, kOSType, @"name": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroChangeModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getWeekDataWithHeroId:(NSInteger)heroId completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroWeekDataPath parameters:@{@"heroId": @(heroId)} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroWeekDataModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getToolMenuCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kToolMenuPath parameters:@{kV, kVersionName, kOSType, @"category": @"database"} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([ToolMenuModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
++ (id)getZBCategoryCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kZBCategoryPath parameters:@{} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([ZBCategoryModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
 @end
 
 

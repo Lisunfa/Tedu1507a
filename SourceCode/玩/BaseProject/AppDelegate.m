@@ -98,6 +98,29 @@
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroDetailWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroGiftAndRun:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroInfoWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getWeekDataWithHeroId:72 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getToolMenuCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getZBCategoryCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 
