@@ -1,15 +1,14 @@
 //
-//  ZBItemViewModel.m
+//  ZBCategoryViewModel.m
 //  BaseProject
 //
 //  Created by jiyingxin on 15/11/12.
 //  Copyright © 2015年 Tarena. All rights reserved.
 //
 
-#import "ZBItemViewModel.h"
+#import "ZBCategoryViewModel.h"
 
-@implementation ZBItemViewModel
-
+@implementation ZBCategoryViewModel
 - (NSInteger)rowNumber{
     return self.dataArr.count;
 }
@@ -34,5 +33,4 @@
 - (NSString *)tagForRow:(NSInteger)row{
     return [self modelForRow:row].tag;
 }
-
 @end

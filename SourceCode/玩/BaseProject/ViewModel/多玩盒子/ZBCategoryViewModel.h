@@ -1,5 +1,5 @@
 //
-//  ZBItemViewModel.h
+//  ZBCategoryViewModel.h
 //  BaseProject
 //
 //  Created by jiyingxin on 15/11/12.
@@ -9,8 +9,7 @@
 #import "BaseViewModel.h"
 #import "DuoWanNetManager.h"
 
-@interface ZBItemViewModel : BaseViewModel
-
+@interface ZBCategoryViewModel : BaseViewModel
 /** 行数 */
 @property(nonatomic) NSInteger rowNumber;
 /** 某行tag值 */

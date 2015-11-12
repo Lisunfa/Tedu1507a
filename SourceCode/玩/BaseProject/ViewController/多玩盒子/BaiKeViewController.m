@@ -11,6 +11,7 @@
 #import "ToolMenuViewModel.h"
 #import "TuWanHtmlViewController.h"
 #import "BestGroupViewController.h"
+#import "ZBCategoryViewController.h"
 
 /** 创建自定义cell、图+题目 BaiKeCell*/
 @interface  BaiKeCell: UITableViewCell
@@ -117,6 +118,11 @@ kRemoveCellSeparator
     }else{
         if ([[self.toolVM tagForRow:indexPath.row] isEqualToString:@"best_group"]) {
             BestGroupViewController *vc = [BestGroupViewController new];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([[self.toolVM tagForRow:indexPath.row] isEqualToString:@"item"]) {
+            ZBCategoryViewController *vc = [ZBCategoryViewController new];
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
