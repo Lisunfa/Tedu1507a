@@ -24,6 +24,7 @@
 		382A8FF51BEB076200A1874C /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF41BEB076200A1874C /* LeftViewController.m */; };
 		3836B1701BF42A9B005FE9E6 /* ZBCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3836B16F1BF42A9B005FE9E6 /* ZBCategoryViewController.m */; };
 		3836B1731BF42AF8005FE9E6 /* ZBCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3836B1721BF42AF8005FE9E6 /* ZBCategoryViewModel.m */; };
+		3836B1761BF42CE8005FE9E6 /* ZBItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3836B1751BF42CE8005FE9E6 /* ZBItemViewModel.m */; };
 		384417171BEF5EE8004D486F /* TuWanVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417161BEF5EE8004D486F /* TuWanVideoModel.m */; };
 		3844171A1BEF6076004D486F /* TuWanPicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417191BEF6076004D486F /* TuWanPicModel.m */; };
 		384417201BF0299C004D486F /* TuWanPicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3844171F1BF0299C004D486F /* TuWanPicViewModel.m */; };
@@ -158,6 +159,8 @@
 		3836B16F1BF42A9B005FE9E6 /* ZBCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCategoryViewController.m; sourceTree = "<group>"; };
 		3836B1711BF42AF8005FE9E6 /* ZBCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBCategoryViewModel.h; sourceTree = "<group>"; };
 		3836B1721BF42AF8005FE9E6 /* ZBCategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCategoryViewModel.m; sourceTree = "<group>"; };
+		3836B1741BF42CE8005FE9E6 /* ZBItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBItemViewModel.h; sourceTree = "<group>"; };
+		3836B1751BF42CE8005FE9E6 /* ZBItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBItemViewModel.m; sourceTree = "<group>"; };
 		384417151BEF5EE8004D486F /* TuWanVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanVideoModel.h; sourceTree = "<group>"; };
 		384417161BEF5EE8004D486F /* TuWanVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanVideoModel.m; sourceTree = "<group>"; };
 		384417181BEF6076004D486F /* TuWanPicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanPicModel.h; sourceTree = "<group>"; };
@@ -451,6 +454,8 @@
 				38F2196F1BF31EA400F11009 /* BestGroupViewModel.m */,
 				3836B1711BF42AF8005FE9E6 /* ZBCategoryViewModel.h */,
 				3836B1721BF42AF8005FE9E6 /* ZBCategoryViewModel.m */,
+				3836B1741BF42CE8005FE9E6 /* ZBItemViewModel.h */,
+				3836B1751BF42CE8005FE9E6 /* ZBItemViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -1040,6 +1045,7 @@
 				38CBDDBE1BEB4755008D5ADC /* ItemDetailModel.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
 				3848D0921BF2D8D80074ADED /* SearchDetailViewController.m in Sources */,
+				3836B1761BF42CE8005FE9E6 /* ZBItemViewModel.m in Sources */,
 				382A8FF21BEB071500A1874C /* RankListViewController.m in Sources */,
 				3848D08F1BF2CE4E0074ADED /* SearchViewController.m in Sources */,
 				3844171A1BEF6076004D486F /* TuWanPicModel.m in Sources */,
