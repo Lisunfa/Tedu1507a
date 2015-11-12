@@ -22,6 +22,7 @@
 		382A8FEF1BEB06EB00A1874C /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FEE1BEB06EB00A1874C /* MyInfoViewController.m */; };
 		382A8FF21BEB071500A1874C /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF11BEB071500A1874C /* RankListViewController.m */; };
 		382A8FF51BEB076200A1874C /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF41BEB076200A1874C /* LeftViewController.m */; };
+		3836B16D1BF42993005FE9E6 /* ZBItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3836B16C1BF42993005FE9E6 /* ZBItemViewModel.m */; };
 		384417171BEF5EE8004D486F /* TuWanVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417161BEF5EE8004D486F /* TuWanVideoModel.m */; };
 		3844171A1BEF6076004D486F /* TuWanPicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417191BEF6076004D486F /* TuWanPicModel.m */; };
 		384417201BF0299C004D486F /* TuWanPicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3844171F1BF0299C004D486F /* TuWanPicViewModel.m */; };
@@ -152,6 +153,8 @@
 		382A8FF11BEB071500A1874C /* RankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankListViewController.m; sourceTree = "<group>"; };
 		382A8FF31BEB076200A1874C /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		382A8FF41BEB076200A1874C /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		3836B16B1BF42993005FE9E6 /* ZBItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBItemViewModel.h; sourceTree = "<group>"; };
+		3836B16C1BF42993005FE9E6 /* ZBItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBItemViewModel.m; sourceTree = "<group>"; };
 		384417151BEF5EE8004D486F /* TuWanVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanVideoModel.h; sourceTree = "<group>"; };
 		384417161BEF5EE8004D486F /* TuWanVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanVideoModel.m; sourceTree = "<group>"; };
 		384417181BEF6076004D486F /* TuWanPicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanPicModel.h; sourceTree = "<group>"; };
@@ -441,6 +444,8 @@
 				3848D0941BF2E6B80074ADED /* ToolMenuViewModel.m */,
 				38F2196E1BF31EA400F11009 /* BestGroupViewModel.h */,
 				38F2196F1BF31EA400F11009 /* BestGroupViewModel.m */,
+				3836B16B1BF42993005FE9E6 /* ZBItemViewModel.h */,
+				3836B16C1BF42993005FE9E6 /* ZBItemViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -1042,6 +1047,7 @@
 				38DC082A1BF1DF4D0077E792 /* PlayView.m in Sources */,
 				38CBDDC31BEB4755008D5ADC /* ZBItemModel.m in Sources */,
 				38CBDDBC1BEB4755008D5ADC /* HeroVideoModel.m in Sources */,
+				3836B16D1BF42993005FE9E6 /* ZBItemViewModel.m in Sources */,
 				3848D08C1BF2CE220074ADED /* BaiKeViewController.m in Sources */,
 				3848D0891BF2CE010074ADED /* HeroViewController.m in Sources */,
 				38CBDDC01BEB4755008D5ADC /* SumAbilityModel.m in Sources */,
