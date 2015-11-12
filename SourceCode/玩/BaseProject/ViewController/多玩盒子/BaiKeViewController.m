@@ -12,6 +12,7 @@
 #import "TuWanHtmlViewController.h"
 #import "BestGroupViewController.h"
 #import "ZBCategoryViewController.h"
+#import "SumAbilityViewController.h"
 
 /** 创建自定义cell、图+题目 BaiKeCell*/
 @interface  BaiKeCell: UITableViewCell
@@ -123,6 +124,11 @@ kRemoveCellSeparator
         }
         if ([[self.toolVM tagForRow:indexPath.row] isEqualToString:@"item"]) {
             ZBCategoryViewController *vc = [ZBCategoryViewController new];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([[self.toolVM tagForRow:indexPath.row] isEqualToString:@"sum_ability"]) {
+            SumAbilityViewController *vc = [SumAbilityViewController new];
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }

@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TRImageView.h"
 
 @interface ZBItemViewController : UIViewController
 - (id)initWithTag:(NSString *)tag name:(NSString *)name;
 @property(nonatomic,strong) NSString *tag;
+@end
+
+@interface ZBItemCell : UICollectionViewCell
+@property(nonatomic,strong) TRImageView *iconView;
+@property(nonatomic,strong) UILabel *nameLb;
 @end

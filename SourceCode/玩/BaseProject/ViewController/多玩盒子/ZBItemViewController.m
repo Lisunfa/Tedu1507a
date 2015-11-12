@@ -8,12 +8,9 @@
 
 #import "ZBItemViewController.h"
 #import "ZBItemViewModel.h"
-#import "TRImageView.h"
 
-@interface ZBItemCell : UICollectionViewCell
-@property(nonatomic,strong) TRImageView *iconView;
-@property(nonatomic,strong) UILabel *nameLb;
-@end
+
+
 @implementation ZBItemCell
 - (UILabel *)nameLb {
     if(_nameLb == nil) {
