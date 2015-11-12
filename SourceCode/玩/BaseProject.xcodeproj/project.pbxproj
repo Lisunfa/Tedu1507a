@@ -15,6 +15,7 @@
 		3820200F1BEC36710003DB02 /* TuWanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820200E1BEC36710003DB02 /* TuWanListViewController.m */; };
 		382020121BEC36F20003DB02 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382020111BEC36F20003DB02 /* TuWanListCell.m */; };
 		382020151BEC415C0003DB02 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382020141BEC415C0003DB02 /* TuWanImageCell.m */; };
+		382306B11BF46A4F0069E0FD /* SumAbilityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 382306B01BF46A4F0069E0FD /* SumAbilityViewModel.m */; };
 		382391651BF0496200F2F52F /* XiMaCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382391641BF0496200F2F52F /* XiMaCategoryCell.m */; };
 		382391681BF0726B00F2F52F /* XiMaCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 382391671BF0726B00F2F52F /* XiMaCategoryViewModel.m */; };
 		382A8FE91BEB066300A1874C /* DuoWanTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */; };
@@ -142,6 +143,8 @@
 		382020111BEC36F20003DB02 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
 		382020131BEC415C0003DB02 /* TuWanImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanImageCell.h; sourceTree = "<group>"; };
 		382020141BEC415C0003DB02 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
+		382306AF1BF46A4F0069E0FD /* SumAbilityViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumAbilityViewModel.h; sourceTree = "<group>"; };
+		382306B01BF46A4F0069E0FD /* SumAbilityViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumAbilityViewModel.m; sourceTree = "<group>"; };
 		382391631BF0496200F2F52F /* XiMaCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryCell.h; sourceTree = "<group>"; };
 		382391641BF0496200F2F52F /* XiMaCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryCell.m; sourceTree = "<group>"; };
 		382391661BF0726B00F2F52F /* XiMaCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryViewModel.h; sourceTree = "<group>"; };
@@ -461,6 +464,8 @@
 				3836B1721BF42AF8005FE9E6 /* ZBCategoryViewModel.m */,
 				3836B1741BF42CE8005FE9E6 /* ZBItemViewModel.h */,
 				3836B1751BF42CE8005FE9E6 /* ZBItemViewModel.m */,
+				382306AF1BF46A4F0069E0FD /* SumAbilityViewModel.h */,
+				382306B01BF46A4F0069E0FD /* SumAbilityViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -1052,6 +1057,7 @@
 				3848D0921BF2D8D80074ADED /* SearchDetailViewController.m in Sources */,
 				3836B1761BF42CE8005FE9E6 /* ZBItemViewModel.m in Sources */,
 				3836B1791BF42F19005FE9E6 /* ZBItemViewController.m in Sources */,
+				382306B11BF46A4F0069E0FD /* SumAbilityViewModel.m in Sources */,
 				382A8FF21BEB071500A1874C /* RankListViewController.m in Sources */,
 				3848D08F1BF2CE4E0074ADED /* SearchViewController.m in Sources */,
 				3844171A1BEF6076004D486F /* TuWanPicModel.m in Sources */,
