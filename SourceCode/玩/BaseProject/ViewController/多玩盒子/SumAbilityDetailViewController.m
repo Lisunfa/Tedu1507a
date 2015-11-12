@@ -88,6 +88,7 @@
         _tableView.allowsSelection = NO;
         _tableView.separatorStyle = 0;
         [self.view addSubview:_tableView];
+        _tableView.sectionHeaderHeight = 23;
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.bottom.right.mas_equalTo(0);
             make.top.mas_equalTo(self.topView.mas_bottom).mas_equalTo(0);
@@ -104,8 +105,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @[@"描述", @"天赋强化", @"提示"][section];
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *view = [UIView new];
+    view.backgroundColor = self.view.backgroundColor;
+    UILabel *lb = [UILabel new];
+    [view addSubview:lb];
+    lb.backgroundColor = [UIColor clearColor];
+    lb.text = @[@"描述", @"天赋强化", @"提示"][section];
+    lb.font = [UIFont systemFontOfSize:13];
+    lb.textColor=[UIColor lightGrayColor];
+    [lb mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10);
+        make.centerY.mas_equalTo(0);
+    }];
+    return view;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
