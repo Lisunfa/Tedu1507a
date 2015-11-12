@@ -9,6 +9,7 @@
 #import "SumAbilityViewController.h"
 #import "SumAbilityViewModel.h"
 #import "ZBItemViewController.h"
+#import "SumAbilityDetailViewController.h"
 
 @interface SumAbilityViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong) SumAbilityViewModel *abilityVM;
@@ -48,7 +49,8 @@
 }
 #pragma mark - UICollectionViewDataDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    SumAbilityDetailViewController *vc = [[SumAbilityDetailViewController alloc] initWithSumAbilityModel:[self.abilityVM modelForRow:indexPath.row]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
