@@ -8,6 +8,7 @@
 
 #import "ZBCategoryViewController.h"
 #import "ZBCategoryViewModel.h"
+#import "ZBItemViewController.h"
 
 @interface ZBCategoryViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -87,6 +88,12 @@
     cell.textLabel.text = [self.categoryVM titleForRow:indexPath.row];
     cell.accessoryType= 1;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ZBItemViewController *vc = [[ZBItemViewController alloc] initWithTag:[self.categoryVM tagForRow:indexPath.row] name:[self.categoryVM titleForRow:indexPath.row]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
